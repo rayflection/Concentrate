@@ -67,7 +67,6 @@ struct Concentration
     }
 
     func getElapsedTime() -> Double {
-        print ("Elapsed time is \(Date().timeIntervalSince(startTime))")
         return Date().timeIntervalSince(startTime)
     }
     init(numberOfPairsOfCards:Int) {

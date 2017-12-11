@@ -21,7 +21,6 @@ class ScoreKeeper {
             break
         }
         let intScore = Int(floatScore)
-        print ("adjusted score is \(intScore)")
 
         return intScore
     }
@@ -31,10 +30,8 @@ class ScoreKeeper {
     func saveFinalScore(score:Int, elapsedTime:Int) -> Void {
         let intScore = calculateScore(score: score, elapsedTime: elapsedTime)
         if (intScore>bestScore) {
-            print ("previous best score is \(bestScore)")
             bestScore = intScore
         }
-        print ("best score is \(bestScore)")
     }
     func getBestScore() -> Int {
         return bestScore
